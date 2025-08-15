@@ -1,8 +1,10 @@
 import styled from 'styled-components'
-import { cores } from '../../styles'
+import { colors } from '../../styles'
 
 export const Items = styled.ul`
   display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
 `
 
 export const Action = styled.div`
@@ -20,11 +22,11 @@ export const Action = styled.div`
 `
 
 export const Item = styled.li`
-  margin-right: 16px;
   position: relative;
+  cursor: zoom-in;
 
   > img {
-    border: 2px solid ${cores.branca};
+    border: 2px solid ${colors.white};
     border-radius: 8px;
     width: 150px;
     height: 150px;
@@ -34,7 +36,6 @@ export const Item = styled.li`
   &:hover {
     ${Action} {
       opacity: 1;
-      cursor: pointer;
       transition: opacity 0.5s ease;
     }
   }
@@ -50,7 +51,7 @@ export const Modal = styled.div`
   justify-content: center;
   align-items: center;
 
-  &.visivel {
+  &.is-visible {
     display: flex;
   }
 
@@ -63,7 +64,7 @@ export const Modal = styled.div`
     background-color: rgba(0, 0, 0, 0.73);
   }
 
-  .iconeFechar,
+  .closeIcon,
   .overlay {
     cursor: pointer;
   }
