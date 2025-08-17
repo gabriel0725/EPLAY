@@ -2,7 +2,6 @@ import * as S from './styles'
 
 import Tag from '../Tag'
 import Button from '../Button'
-import { Game } from '../../pages/Home'
 import { useDispatch } from 'react-redux'
 import { add, open } from '../../store/reducers/cart'
 import { parseToBrl } from '../../utils'

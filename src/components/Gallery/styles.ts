@@ -64,7 +64,6 @@ export const Modal = styled.div`
     background-color: rgba(0, 0, 0, 0.73);
   }
 
-  .closeIcon,
   .overlay {
     cursor: pointer;
   }
@@ -83,6 +82,12 @@ export const ModalContent = styled.div`
     h4 {
       font-size: 18px;
       font-weight: bold;
+    }
+
+    img {
+      height: 16px;
+      width: 16px;
+      cursor: pointer;
     }
   }
 
